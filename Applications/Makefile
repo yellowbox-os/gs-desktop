@@ -23,8 +23,5 @@ system: check_root
 	cd $$WORKDIR/FTP && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
 	cd $$WORKDIR/InnerSpace && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
 	cd $$WORKDIR/OpenUp && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
-	cd $$WORKDIR/RemoteView && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
-	cd $$WORKDIR/ScanImage && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
-	cd $$WORKDIR/Sketch && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
 
 	fi;
