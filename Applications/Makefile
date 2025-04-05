@@ -18,10 +18,7 @@ system: check_root
 	echo "CPUS is set to: $$CPUS"; \
 	echo "GNUSTEP_INSTALLATION_DOMAIN is set to: $$GNUSTEP_INSTALLATION_DOMAIN"; \
 	echo "WORKDIR is set to: $$WORKDIR"; \
-	cd $$WORKDIR/Addresses && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
-	cd $$WORKDIR/Affiche && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
 	cd $$WORKDIR/Calculator && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
-	cd $$WORKDIR/DefaultsManager && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
 	cd $$WORKDIR/DictionaryReader && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
 	cd $$WORKDIR/FTP && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
 	cd $$WORKDIR/InnerSpace && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
