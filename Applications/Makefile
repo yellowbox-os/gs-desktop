@@ -22,6 +22,5 @@ system: check_root
 	cd $$WORKDIR/DictionaryReader && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
 	cd $$WORKDIR/FTP && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
 	cd $$WORKDIR/InnerSpace && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
-	cd $$WORKDIR/OpenUp && gmake -j"${CPUS}" || exit 1 || exit 1 && gmake install && gmake clean; \
 
 	fi;
